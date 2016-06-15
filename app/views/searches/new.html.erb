@@ -1,0 +1,10 @@
+<h1>Search users</h1>
+
+<p>Start entering user's first or last name...</p>
+
+<%= form_tag searches_path, method: :create do %>
+  <label>User</label>
+  <%= select_tag 'user', nil, class: 'autocomplete', style: 'width: 600px' %>
+
+  <%= submit_tag 'Go!' %>
+<% end %>
